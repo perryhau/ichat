@@ -2,7 +2,7 @@
 
 function para_metric($pattern, $day){
 
-    $url = $_SERVER ['HTTP_HOST'].'/istatdchat/';
+    $url = $_SERVER ['HTTP_HOST'].'/';
     $metric_list = "http://".$url."api/istatd_metric.php?pattern=$pattern";
     $json_data = file_get_contents("$metric_list");
     $obj = json_decode($json_data,true);
